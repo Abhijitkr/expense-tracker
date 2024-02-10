@@ -30,7 +30,7 @@ export default function Summary() {
   }, [allTransactions]);
 
   return (
-    <Flex bg="white" py="10">
+    <Flex bg="white" py="10" boxShadow="sm">
       <Box w="50%">
         <Heading fontSize="1.5em" color="gray.500" textAlign="center" p="5">
           Balance is ${totalIncome - totalExpense}

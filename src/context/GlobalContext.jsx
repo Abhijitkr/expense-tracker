@@ -10,7 +10,6 @@ export default function GlobalState({ children }) {
     description: "",
     amount: 0,
   });
-  const [value, setValue] = useState("expense");
   const [totalIncome, setTotalIncome] = useState(0);
   const [totalExpense, setTotalExpense] = useState(0);
   const [allTransactions, setAllTransactions] = useState([]);
@@ -34,8 +33,6 @@ export default function GlobalState({ children }) {
         onClose,
         formData,
         setFormData,
-        value,
-        setValue,
         totalExpense,
         setTotalExpense,
         totalIncome,

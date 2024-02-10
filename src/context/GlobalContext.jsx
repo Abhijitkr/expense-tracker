@@ -25,7 +25,6 @@ export default function GlobalState({ children }) {
       amount: 0,
     });
   }
-  console.log(allTransactions);
 
   return (
     <GlobalContext.Provider

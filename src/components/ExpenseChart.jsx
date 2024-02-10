@@ -1,4 +1,6 @@
+import { useContext } from "react";
 import Charts from "react-apexcharts";
+import { GlobalContext } from "../context/GlobalContext";
 
 const options = {
   labels: ["Income", "Expense"],
@@ -44,14 +46,16 @@ const options = {
   },
 };
 
-export default function ExpenseChart({ income = 1000, expense = 500 }) {
+export default function ExpenseChart() {
+  const { totalIncome, totalExpense } = useContext(GlobalContext);
+
   return (
     <Charts
       options={options}
       type="pie"
       height="100%"
       width="100%"
-      series={[income, expense]}
+      series={[totalIncome, totalExpense]}
     />
   );
 }

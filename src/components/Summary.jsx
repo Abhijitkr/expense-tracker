@@ -1,5 +1,6 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import AddTransaction from "./AddTransaction";
+import ExpenseChart from "./ExpenseChart";
 
 export default function Summary() {
   return (
@@ -25,9 +26,9 @@ export default function Summary() {
           </Box>
         </Flex>
       </Box>
-      <Box w="50%">
-        <Heading>Chart</Heading>
-      </Box>
+      <Flex justifyContent="center" alignItems="center" w="50%">
+        <ExpenseChart />
+      </Flex>
       <AddTransaction />
     </Flex>
   );

@@ -1,9 +1,10 @@
 import { Container } from "@chakra-ui/react";
+import Main from "./components/Main";
 
 function App() {
   return (
-    <Container bg="green.500" textColor="white">
-      test
+    <Container maxW="3xl" h="100vh">
+      <Main />
     </Container>
   );
 }
